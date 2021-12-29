@@ -6,6 +6,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 1340px;
+  height: 615px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -24,6 +33,7 @@ body {
 a.navbar__link:hover {
   text-decoration: underline;
 }
+
 
 .appsbutton svg {
   width: 24px;
@@ -54,6 +64,11 @@ a.navbar__link:hover {
   text-align: center;
 }
 
+.navbar__link__button:hover {
+  cursor: pointer;
+  box-shadow: 0px 13px 31px 4px rgba(80,148,237,0.22);
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -73,6 +88,13 @@ a.navbar__link:hover {
   margin: 15px;
   line-height: 27px;
   text-align: center;
+  border-radius: 4px;
+}
+
+.inputs__item:hover {
+  cursor: pointer;
+  border: 1px solid rgb(218, 218, 218);
+
 }
 
 .input {
@@ -84,13 +106,62 @@ a.navbar__link:hover {
   height: 44px;
 }
 
-.content {
+.sec {
+  position: relative;
+}
 
+.sec input {
+  display: block;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute; 
+  top: 10px; 
+  left: 10px
+}
+
+.tia-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute; 
+  top: 10px; 
+  right: 40px
+}
+
+.voicelogo-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute; 
+  top: 10px; 
+  right: 10px
 }
 
 .footer {
   background-color: #F2F2F2;
   color: #70757a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  bottom: 0px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.content img {
+  width: 12px;
+  height: 14px;
+}
+
+.hr {
+  border: 1px solid #dadce0;
+}
+
+.sub-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,17 +174,21 @@ a.navbar__link:hover {
   justify-content: flex-start;
   align-items: flex-start;
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 a {
   text-decoration: none;
+  color: #70757a
 }
 
 a:hover {
   text-decoration: underline;
+  color: #70757a
 }
 
 .list__item {
-  padding: 10px;
+  padding-inline-end: 10px;
   color: #70757a;
+  font-size: 14px;
 }
